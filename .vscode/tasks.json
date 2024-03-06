@@ -1,0 +1,33 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ build project",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/Classes/Bebida.cpp",
+                "${workspaceFolder}/Classes/Comida.cpp",
+                "${workspaceFolder}/Classes/main.cpp",
+                "${workspaceFolder}/Classes/Mesa.cpp",
+                "${workspaceFolder}/Classes/Menu.cpp",
+                "${workspaceFolder}/Classes/Produto.cpp",
+                "-o",
+                "${workspaceFolder}/MeuPrograma" 
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Compiler: g++"
+        }
+    ],
+    "version": "2.0.0"
+}

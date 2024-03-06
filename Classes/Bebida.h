@@ -25,5 +25,8 @@ private:
 
     bool alcoolico;
     float volume;
+    string tipo;
+   
+
 
 };
