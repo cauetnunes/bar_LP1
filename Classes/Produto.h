@@ -1,36 +1,27 @@
-#ifndef PRODUTO_H
-#define PRODUTO_H
+#pragma once
+
 #include <string>
 #include <iostream>
 
 using namespace std;
 
-// CLASSE ABSTRATA QUE SERVE SÓ PARA IDEALIZAR COMIDA E BEBIDA
-
 class Produto {
-protected: // Membros protegidos para que as subclasses possam acessá-los
+protected: 
     int id;
     string nome;
-    float preço;
+    float preco;
     int qtdEstoque;
 
 public:
-    // Construtor com argumentos para inicializar os atributos
-    Produto(int _id, string _nome, float _preço, int _qtdEstoque)
-        : id(_id), nome(_nome), preço(_preço), qtdEstoque(_qtdEstoque) {}
-    
-    Produto();
+    Produto(int _id, string _nome, float _preco, int _qtdEstoque)
+        : id(_id), nome(_nome), preco(_preco), qtdEstoque(_qtdEstoque) {}
 
-    // Métodos CRUD virtuais puros
+    virtual ~Produto() {}
+
     virtual void criar() = 0;
-    virtual void ler() const = 0;
+    virtual void ler()  = 0;
     virtual void atualizar() = 0;
     virtual void remover() = 0;
-
-    
-    virtual ~Produto() {}
 };
-
-#endif
 
 

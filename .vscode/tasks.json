@@ -10,7 +10,7 @@
                 "${workspaceFolder}/Classes/Bebida.cpp",
                 "${workspaceFolder}/Classes/Comida.cpp",
                 "${workspaceFolder}/Classes/main.cpp",
-                "${workspaceFolder}/Classes/Mesa.cpp",
+                "${workspaceFolder}/Classes/admin.cpp",
                 "${workspaceFolder}/Classes/Menu.cpp",
                 "${workspaceFolder}/Classes/Produto.cpp",
                 "-o",

@@ -1,14 +1,18 @@
-// #include "Comida.h"
-// #include <string>
-
-// using namespace std;
+#include "Comida.h"
 
 
+void Comida::criar() {
+    // Implemente a lógica para criar uma comida
+}
 
-// void Comida::criar() override {}
+void Comida::ler()  {
+    // Implemente a lógica para ler os dados de uma comida
+}
 
-// void Comida::ler() const override {}
+void Comida::atualizar() {
+    // Implemente a lógica para atualizar uma comida
+}
 
-// void Comida::atualizar() override {}
-
-// void Comida::remover() override {}
+void Comida::remover() {
+    // Implemente a lógica para remover uma comida
+}
