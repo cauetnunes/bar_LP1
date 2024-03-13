@@ -1,0 +1,52 @@
+@startuml
+
+abstract class Produto {
+    - idProduto: int
+    - nome: string
+    - descricao: string
+    - preco: float
+    - quantidadeEstoque: int
+}
+
+class Comida extends Produto {
+    - porcao: string
+}
+
+class Bebida extends Produto {
+    - volume: float
+    - alcoolica: bool
+}
+
+class Cliente {
+    - idMesa: int
+    - numeroMesa: int
+    - ocupada: bool
+    - capacidade: int
+}
+
+class Pedido {
+    - idPedido: int
+    - idMesa: int
+    - dataHora: datetime
+    - itensPedido: List<Produto>
+}
+
+class GerenteCRUD {
+    + adicionarProduto(Produto): void
+    + atualizarProduto(Produto): void
+    + pesquisarProdutoPorNome(string): Produto
+    + removerProduto(int): void
+    + listarProdutos(): List<Produto>
+    + exibirProduto(int): Produto
+}
+
+class Relatorio {
+    + gerarRelatorioVendas(): string
+    + gerarRelatorioEstoque(): string
+    + gerarRelatorioClientes(): string
+}
+
+Cliente "1" -- "*" Pedido
+Pedido "1" -- "*" Produto: contém
+
+@enduml

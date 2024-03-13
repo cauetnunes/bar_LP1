@@ -13,8 +13,10 @@
                 "${workspaceFolder}/Classes/Mesa.cpp",
                 "${workspaceFolder}/Classes/Menu.cpp",
                 "${workspaceFolder}/Classes/Produto.cpp",
+                "${workspaceFolder}/Classes/bancoDados.cpp",
                 "-o",
-                "${workspaceFolder}/MeuPrograma" 
+                "${workspaceFolder}/MeuPrograma",
+                "-lpqxx" 
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
