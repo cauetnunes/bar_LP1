@@ -1,3 +1,4 @@
+#pragma once
 #include "Produto.h"
 #include <iostream>
 
@@ -12,18 +13,18 @@ public:
     Bebida(int _id, string _nome, float _preço, int _qtdEstoque)
         : Produto(_id, _nome, _preço, _qtdEstoque) {}
 
-    void criar() override {}
+    void criar()override;
 
-    void ler() const override {}
+    void ler()override;
 
-    void atualizar() override {}
+    void atualizar()override;
 
-    void remover() override {}
+    void remover()override;
 
 
 private:
 
-    bool alcoolico;
+    
     float volume;
     string tipo;
    

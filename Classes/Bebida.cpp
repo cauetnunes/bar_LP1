@@ -1,24 +1,18 @@
-// #include "Bebida.h"
-// #include <string>
+#include "Bebida.h"
 
 
-// void Bebida::criar() override {
+void Bebida::criar() {
+    // Implemente a lógica para criar uma bebida
+}
 
-// }
+void Bebida::ler()  {
+    // Implemente a lógica para ler os dados de uma bebida
+}
 
-// void Bebida::ler() const override {
+void Bebida::atualizar() {
+    // Implemente a lógica para atualizar uma bebida
+}
 
-// }
-
-// void atualizar() override {
-
-// }
-
-// void remover() override {
-
-// }
-
-
-
-
-
+void Bebida::remover() {
+    // Implemente a lógica para remover uma bebida
+}

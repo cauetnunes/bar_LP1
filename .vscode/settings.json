@@ -5,6 +5,6 @@
         "editor.insertSpaces": true
     },
     "files.associations": {
-        "stdexcept": "cpp"
+        "ostream": "cpp"
     }
 }
