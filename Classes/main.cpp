@@ -1,10 +1,20 @@
-#include <iostream>
-#include "Menu.h"
+    #include <iostream>
+    #include "Menu.h"
 
-int main()
-{
-    Menu menu;
-    return menu.abrirmenu();
 
-    
-}   
+
+    int main()
+    {
+        vector<Produto*> produtos;
+        vector<Pedido*> pedidos;
+        Menu menu;
+        menu.lerProdutos(produtos);
+        menu.lerPedidos(pedidos);
+
+
+        return menu.abrirmenu(produtos, pedidos);
+
+            
+        
+    }   
+

@@ -13,6 +13,8 @@
                 "${workspaceFolder}/Classes/admin.cpp",
                 "${workspaceFolder}/Classes/Menu.cpp",
                 "${workspaceFolder}/Classes/Produto.cpp",
+                "${workspaceFolder}/Classes/Cliente.cpp",
+                "${workspaceFolder}/Classes/Pedido.cpp",
                 "-o",
                 "${workspaceFolder}/MeuPrograma" 
             ],
