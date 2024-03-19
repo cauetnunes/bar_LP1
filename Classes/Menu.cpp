@@ -202,7 +202,10 @@ void Menu::lerPedidos(vector<Pedido*>& pedidos) {
     cout << "Pressione Enter para pagar e sair." << endl;
     cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
     cin.get(); 
-    cliente.salvarPedidos();
+    if (!cliente.getPedidos().empty()) {
+    float totalConta = cliente.calcularTotal();
+    cliente.salvarPedidos(totalConta);
+}
     cout << "Obrigado por visitar o BAR DO CI! Volte sempre." << endl;
     sleep(2);   
-}
+}   

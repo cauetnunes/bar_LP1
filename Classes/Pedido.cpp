@@ -8,8 +8,10 @@ float Pedido::getValorTotal() const {
 }
 
 void Pedido::printPedidos(vector<Pedido*>& pedidos) {
+    std::cout << "Lista de Pedidos:" << std::endl;
     for (const auto& pedido : pedidos) {
         std::cout << "Pedido -------------------------------------------------- R$ " << pedido->valorTotal << std::endl;
     }
 }
+
 

@@ -108,8 +108,14 @@
                     mostrarComidas(produtos);
                     cout << endl;
 
-                    cout << "Digite o nome do produto que deseja remover: ";
+                    cout << "Digite o nome do produto que deseja remover ou 0 para voltar ao painel de admin: ";
                     cin >> nomeRemover;
+
+                    if (nomeRemover == "0")
+                    {
+                        break;
+                    }
+                    
                     for (auto it = produtos.begin(); it != produtos.end(); ++it) {
                         if ((*it)->getNome() == nomeRemover) {
                             if (dynamic_cast<Comida*>(*it) != nullptr) {
@@ -132,8 +138,12 @@
                     mostrarComidas(produtos);
                     cout << endl;
 
-                    cout << "Digite o nome do produto que deseja editar: ";
+                    cout << "Digite o nome do produto que deseja editar ou 0 para voltar ao painel de admin: ";
                     cin >> nomeEditar;
+
+                    if (nomeEditar == "0") {
+                      break; 
+                     }
 
                     for (auto& produto : produtos) {
                         if (produto->getNome() == nomeEditar) {

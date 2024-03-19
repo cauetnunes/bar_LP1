@@ -21,19 +21,15 @@ vector<Produto*> Cliente::getPedidos() {
     return pedidos;
 }
 
-void Cliente::salvarPedidos() {
-    ofstream arquivo("pedidos.txt", ios_base::app); 
+void Cliente::salvarPedidos(float valorTotal) {
+    ofstream arquivo("pedidos.txt", ios_base::app); // Abre o arquivo em modo de adição
 
     if (!arquivo.is_open()) {
         cout << "Erro ao abrir o arquivo pedidos.txt" << endl;
         return;
     }
 
-   
-    Produto* ultimoPedido = pedidos.back();
-    if (ultimoPedido != nullptr) {
-         arquivo << "Pedido -------------------------------------------------- R$ " << ultimoPedido->getPreco() << endl;
-    }
+    arquivo << "Pedido -------------------------------------------------- R$ " << valorTotal << endl;
 
     arquivo.close();
 }

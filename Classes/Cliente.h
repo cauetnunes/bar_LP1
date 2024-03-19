@@ -14,7 +14,7 @@ public:
     float calcularTotal();
     void adicionarPedido(Produto* produto);
     void encerrarSessao();
-    void salvarPedidos();
+    void salvarPedidos(float valorTotal);
     void carregarPedidos();
     vector<Produto*> getPedidos();
 

@@ -69,21 +69,20 @@ void mostrarBebidas(const vector<Produto*>& produtos) {
 
 void mostrarPedidos(vector<Pedido*>& pedidos) {
     cout << "|*******************************|" << endl;
+    cout << "|        Lista de Pedidos       |" << endl;
     cout << "--------------------------------------------------------------------------" << endl;
 
-    bool hasPedidos = false;
-
-    for (const auto& pedido : pedidos) {
-        pedido->printPedidos(pedidos);
-        hasPedidos = true;
-    }
-
-    if (!hasPedidos) {
+    if (pedidos.empty()) {
         cout << "Nenhum pedido cadastrado." << endl;
+    } else {
+        for (const auto& pedido : pedidos) {
+            cout << "Pedido -------------------------------------------------- R$ " << pedido->getValorTotal() << endl;
+        }
     }
 
     cout << "--------------------------------------------------------------------------" << endl;
 }
+
 
 
 
